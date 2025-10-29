@@ -1,6 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://6vuak2wi5ux3"]
-
-[ext_resource type="Script" uid="uid://bqsyqma8ltsad" path="res://Game/Scripts/CSharp/ScriptMove.cs" id="1_7qep5"]
-
-[node name="Node2D" type="Node2D"]
-script = ExtResource("1_7qep5")
