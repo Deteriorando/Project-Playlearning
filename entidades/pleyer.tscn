@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dx7bmcnt8xeym"]
+[gd_scene load_steps=10 format=3 uid="uid://dx7bmcnt8xeym"]
 
 [ext_resource type="Script" uid="uid://d1824qcn0eb2q" path="res://scripts/Player.gd" id="1_kv1v3"]
 [ext_resource type="Texture2D" uid="uid://c2vxidv5t1o5b" path="res://sprites/Person 1 32x-Sheet.png" id="2_grrnm"]
@@ -19,6 +19,14 @@ region = Rect2(64, 0, 32, 32)
 atlas = ExtResource("2_grrnm")
 region = Rect2(96, 0, 32, 32)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_1stry"]
+atlas = ExtResource("2_grrnm")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e62nf"]
+atlas = ExtResource("2_grrnm")
+region = Rect2(32, 0, 32, 32)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_1stry"]
 animations = [{
 "frames": [{
@@ -32,7 +40,23 @@ animations = [{
 "texture": SubResource("AtlasTexture_6vpkp")
 }],
 "loop": true,
-"name": &"sprits1",
+"name": &"andando",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1stry")
+}],
+"loop": true,
+"name": &"parado",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e62nf")
+}],
+"loop": true,
+"name": &"pulo",
 "speed": 5.0
 }]
 
@@ -44,7 +68,5 @@ shape = SubResource("CapsuleShape2D_jmagg")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_1stry")
-animation = &"sprits1"
-autoplay = "sprits1"
-frame = 2
-frame_progress = 0.25857633
+animation = &"pulo"
+autoplay = "andando"
