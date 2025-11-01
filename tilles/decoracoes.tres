@@ -1,7 +1,8 @@
-[gd_resource type="TileSet" load_steps=7 format=3 uid="uid://dj5aok8ojptpy"]
+[gd_resource type="TileSet" load_steps=9 format=3 uid="uid://dj5aok8ojptpy"]
 
 [ext_resource type="Texture2D" uid="uid://ctrfs4qjylnsv" path="res://sprites/Seasonal Tilesets/Seasonal Tilesets/1 - Grassland/Grassland_entities (16 x 16).png" id="1_b2hjq"]
 [ext_resource type="Texture2D" uid="uid://b6c2vjupjqv71" path="res://sprites/Seasonal Tilesets/Seasonal Tilesets/5 - Misc. universal tiles/House (112 x 96).png" id="2_gxl0l"]
+[ext_resource type="Texture2D" uid="uid://8p38q2tw1oqx" path="res://sprites/Seasonal Tilesets/Seasonal Tilesets/3 - Tropics/Tropics_entities (16 x 16).png" id="3_gxl0l"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_wiwbg"]
 tile_data = PackedInt32Array(65536, 196608, 5, 1, 327680, 1, 65539, 65536, 5, 4, 589824, 1, 5, 589824, 1, 7, 327680, 1, 8, 589824, 1)
@@ -54,8 +55,47 @@ texture = ExtResource("2_gxl0l")
 0:0/0 = 0
 0:0/0/texture_origin = Vector2i(0, 8)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wiwbg"]
+texture = ExtResource("3_gxl0l")
+11:2/0 = 0
+12:2/0 = 0
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+9:3/0 = 0
+11:3/0 = 0
+13:3/0 = 0
+15:3/0 = 0
+12:5/animation_separation = Vector2i(1, 0)
+12:5/animation_frame_0/duration = 0.3
+12:5/animation_frame_1/duration = 0.3
+12:5/0 = 0
+12:5/0/z_index = 2
+12:6/animation_separation = Vector2i(1, 0)
+12:6/animation_frame_0/duration = 0.3
+12:6/animation_frame_1/duration = 0.3
+12:6/0 = 0
+12:6/0/z_index = 2
+12:7/0 = 0
+14:7/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+1:1/size_in_atlas = Vector2i(3, 3)
+1:1/0 = 0
+5:3/0 = 0
+5:3/0/z_index = 2
+5:3/0/y_sort_origin = 1
+6:3/0 = 0
+6:3/0/z_index = 2
+6:3/0/y_sort_origin = 2
+7:3/0 = 0
+7:3/0/z_index = 2
+7:3/0/y_sort_origin = 2
+
 [resource]
 sources/0 = SubResource("TileSetAtlasSource_g164u")
 sources/1 = SubResource("TileSetAtlasSource_ruv6c")
+sources/2 = SubResource("TileSetAtlasSource_wiwbg")
 pattern_0 = SubResource("TileMapPattern_wiwbg")
 pattern_1 = SubResource("TileMapPattern_xd2vq")
