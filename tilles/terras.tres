@@ -7,24 +7,18 @@
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g6vlc"]
 texture = ExtResource("1_6t3a6")
 3:1/0 = 0
-3:1/0/z_index = 2
 3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -1.3489408, -8, -1.1690817)
 3:1/0/physics_layer_0/polygon_0/one_way = true
 4:1/0 = 0
-4:1/0/z_index = 2
 4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -1.3489408, -8, -1.1690817)
 4:1/0/physics_layer_0/polygon_0/one_way = true
 5:1/0 = 0
-5:1/0/z_index = 2
 5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, -1.3489408, -8, -1.1690817)
 5:1/0/physics_layer_0/polygon_0/one_way = true
 11:1/0 = 0
 3:2/0 = 0
-3:2/0/z_index = 2
 4:2/0 = 0
-4:2/0/z_index = 2
 5:2/0 = 0
-5:2/0/z_index = 2
 11:2/0 = 0
 1:3/0 = 0
 1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
