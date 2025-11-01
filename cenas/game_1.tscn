@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=4 uid="uid://igurwk4picw"]
+[gd_scene load_steps=5 format=4 uid="uid://igurwk4picw"]
 
 [ext_resource type="PackedScene" uid="uid://dx7bmcnt8xeym" path="res://entidades/pleyer.tscn" id="1_aca7r"]
 [ext_resource type="TileSet" uid="uid://c47canc22e3w5" path="res://tilles/terras.tres" id="2_g6vlc"]
 [ext_resource type="TileSet" uid="uid://dj5aok8ojptpy" path="res://tilles/decoracoes.tres" id="3_g164u"]
+[ext_resource type="PackedScene" uid="uid://dfbt4d13o253v" path="res://entidades/camera.tscn" id="4_g164u"]
 
 [node name="game1" type="Node2D"]
 
@@ -18,3 +19,6 @@ tile_set = ExtResource("2_g6vlc")
 [node name="decoração" type="TileMapLayer" parent="Tilles"]
 tile_map_data = PackedByteArray("AAAcAAIAAAAOAAUAAAAcAAEAAAAOAAQAAAAdAAEAAAAPAAQAAAAeAAEAAAAPAAQAAAAfAAEAAAAPAAQAAAAgAAEAAAASAAQAAAAgAAIAAAASAAUAAAAgAAQAAAASAAUAAAAgAAMAAAASAAUAAAAcAAQAAAAOAAUAAAAXAAMAAAAJAAEAAAASAAMAAAABAAEAAAAQAAMAAAAFAAEAAAAUAAMAAAAFAAEAAAAUAAQAAAAPAAIAAAAVAAQAAAAQAAIAAAAWAAQAAAAQAAIAAAAXAAQAAAAQAAIAAAAYAAQAAAAQAAIAAAAZAAQAAAAQAAIAAAAaAAQAAAAQAAIAAAAbAAQAAAABAAUAAAAcAAMAAAAOAAUAAAARAAQAAAABAAUAAAAkAAcAAAABAAUAAAAlAAcAAAABAAUAAAAwAAYAAAABAAUAAAAmAAcAAAAFAAUAAAAnAAcAAAAFAAUAAAAoAAcAAAAFAAUAAAApAAcAAAAFAAUAAAAqAAcAAAAFAAUAAAArAAcAAAAFAAUAAAAsAAcAAAAFAAUAAAAtAAcAAAAFAAUAAAAuAAcAAAAFAAUAAAAvAAcAAAAFAAUAAAA9AAQAAQAAAAAAAAAFAAQAAAADAAUAAAAGAAMAAAAFAAEAAAAIAAQAAAABAAUAAAAJAAMAAAAJAAEAAAAKAAMAAAAJAAEAAAAMAAMAAAAFAAEAAAANAAMAAAAJAAEAAAABAPv/AAABAAEAAAABAAAAAAABAAUAAAACAP7/AAABAAUAAAADAAIAAAABAAUAAAA=")
 tile_set = ExtResource("3_g164u")
+
+[node name="Camera" parent="." instance=ExtResource("4_g164u")]
+position = Vector2(117, 0)

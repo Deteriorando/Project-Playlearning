@@ -60,7 +60,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="pleyer" type="CharacterBody2D"]
+[node name="pleyer" type="CharacterBody2D" groups=["pleyer"]]
 z_index = 1
 script = ExtResource("1_kv1v3")
 
@@ -72,9 +72,3 @@ shape = SubResource("CapsuleShape2D_jmagg")
 sprite_frames = SubResource("SpriteFrames_1stry")
 animation = &"pulo"
 autoplay = "andando"
-
-[node name="Camera2D" type="Camera2D" parent="."]
-limit_left = 0
-limit_top = 0
-limit_bottom = 100
-position_smoothing_enabled = true
