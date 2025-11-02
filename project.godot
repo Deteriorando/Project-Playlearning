@@ -26,6 +26,13 @@ window/stretch/mode="canvas_items"
 
 pleyer=""
 
+[layer_names]
+
+2d_physics/layer_1="terra"
+2d_physics/layer_2="player"
+2d_physics/layer_3="inimigos"
+2d_physics/layer_4="fim"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
