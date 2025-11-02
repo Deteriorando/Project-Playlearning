@@ -1,11 +1,14 @@
-[gd_scene load_steps=5 format=4 uid="uid://igurwk4picw"]
+[gd_scene load_steps=7 format=4 uid="uid://igurwk4picw"]
 
 [ext_resource type="PackedScene" uid="uid://dx7bmcnt8xeym" path="res://entidades/pleyer.tscn" id="1_aca7r"]
+[ext_resource type="Script" uid="uid://b1buplik4da4w" path="res://scripts/game_dialogo_box1.gd" id="1_msh08"]
 [ext_resource type="TileSet" uid="uid://c47canc22e3w5" path="res://tilles/terras.tres" id="2_g6vlc"]
 [ext_resource type="TileSet" uid="uid://dj5aok8ojptpy" path="res://tilles/decoracoes.tres" id="3_g164u"]
 [ext_resource type="PackedScene" uid="uid://dfbt4d13o253v" path="res://entidades/camera.tscn" id="4_g164u"]
+[ext_resource type="PackedScene" uid="uid://cnw2an128ouxs" path="res://cenas/ui_canvas.tscn" id="6_uvsh8"]
 
 [node name="game1" type="Node2D"]
+script = ExtResource("1_msh08")
 
 [node name="pleyer" parent="." instance=ExtResource("1_aca7r")]
 position = Vector2(22, 42)
@@ -22,3 +25,14 @@ tile_set = ExtResource("3_g164u")
 
 [node name="Camera" parent="." instance=ExtResource("4_g164u")]
 position = Vector2(117, 0)
+
+[node name="ui_canvas" parent="." instance=ExtResource("6_uvsh8")]
+
+[node name="Controldocanvas" type="Control" parent="ui_canvas"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true

@@ -13,7 +13,7 @@ config_version=5
 config/name="Playleaning"
 run/main_scene="uid://igurwk4picw"
 config/features=PackedStringArray("4.5", "Mobile")
-config/icon="res://icon.svg"
+config/icon="res://sprites/foto_de_dialogo/icon.svg"
 
 [display]
 
