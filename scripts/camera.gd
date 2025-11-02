@@ -6,7 +6,7 @@ func _ready() -> void:
 	get_alvo()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	position = alvo.position
 	
 func get_alvo():

@@ -1,15 +1,16 @@
-[gd_scene load_steps=5 format=4 uid="uid://d5baux8fupwm"]
+[gd_scene load_steps=6 format=4 uid="uid://d5baux8fupwm"]
 
 [ext_resource type="PackedScene" uid="uid://dx7bmcnt8xeym" path="res://entidades/pleyer.tscn" id="1_ur7bn"]
 [ext_resource type="TileSet" uid="uid://c47canc22e3w5" path="res://tilles/terras.tres" id="2_y8hrx"]
 [ext_resource type="TileSet" uid="uid://dj5aok8ojptpy" path="res://tilles/decoracoes.tres" id="3_y8hrx"]
 [ext_resource type="PackedScene" uid="uid://dfbt4d13o253v" path="res://entidades/camera.tscn" id="4_iel3y"]
+[ext_resource type="PackedScene" uid="uid://bwhwil62ld5u0" path="res://entidades/fim.tscn" id="5_ujypj"]
 
 [node name="tropical" type="Node2D"]
 metadata/_edit_vertical_guides_ = [992.0]
 
 [node name="pleyer" parent="." instance=ExtResource("1_ur7bn")]
-position = Vector2(81, 98)
+position = Vector2(78, 101)
 
 [node name="terreno" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAAAAcAAgABAAMAAAABAAcAAgACAAMAAAACAAcAAgACAAMAAAADAAcAAgACAAMAAAAEAAcAAgACAAMAAAAFAAcAAgACAAMAAAAGAAcAAgACAAMAAAAHAAcAAgACAAMAAAAIAAYAAgACAAMAAAAJAAYAAgACAAMAAAAKAAYAAgACAAMAAAALAAUAAgACAAMAAAAMAAUAAgACAAMAAAANAAUAAgACAAMAAAAOAAUAAgACAAMAAAAPAAUAAgACAAMAAAAQAAUAAgACAAMAAAARAAUAAgACAAMAAAASAAUAAgACAAMAAAATAAUAAgACAAMAAAAUAAUAAgACAAMAAAAVAAUAAgACAAMAAAAkAAUAAgACAAMAAAAlAAUAAgACAAMAAAAmAAUAAgACAAMAAAAnAAUAAgACAAMAAAAnAAQAAgACAAMAAAAoAAQAAgACAAMAAAApAAQAAgACAAMAAAAqAAQAAgACAAMAAAArAAQAAgAGAAMAAAAsAAQAAgAGAAMAAAAtAAQAAgAGAAMAAAAuAAQAAgAGAAMAAAAvAAQAAgAGAAMAAAAwAAQAAgAGAAMAAAAxAAQAAgAGAAMAAAAyAAQAAgAGAAMAAAAzAAQAAgAGAAMAAAAZAAUAAgAEAAYAAAAcAAQAAgAEAAEAAAAfAAUAAAAGAAMAAAAiAAUAAAAGAAMAAAAXAAQAAgABAAMAAAAbAAQAAgADAAEAAAAdAAQAAgAFAAEAAAAYAAQAAgAHAAMAAAA0AAQAAgAEAAEAAAA1AAMAAgAEAAEAAAA2AAMAAgAEAAEAAAA3AAMAAgAEAAEAAAA4AAIAAgAEAAEAAAA5AAIAAgAEAAEAAAA5AAEAAgAEAAEAAAA6AAEAAgAEAAEAAAA7AAAAAgAEAAEAAAA8AAAAAgAEAAEAAAA9AAAAAgAEAAEAAAAgAAUAAAAGAAMAAAAhAAUAAAAGAAMAAAA=")
@@ -22,3 +23,7 @@ tile_set = ExtResource("3_y8hrx")
 [node name="Camera" parent="." instance=ExtResource("4_iel3y")]
 position = Vector2(147, 93)
 limit_right = 992
+
+[node name="fim" parent="." instance=ExtResource("5_ujypj")]
+position = Vector2(991, -47)
+next_level = "floresta"

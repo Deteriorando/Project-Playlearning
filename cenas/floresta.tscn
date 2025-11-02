@@ -79,4 +79,5 @@ tile_map_data = PackedByteArray("AAAAAAYAAAABAAMAAAABAAYAAAACAAMAAAACAAYAAAACAAM
 tile_set = ExtResource("2_2o08j")
 
 [node name="Area2D" parent="." instance=ExtResource("9_eg8yq")]
-position = Vector2(848, -132)
+position = Vector2(855, -131)
+next_level = "tropical"
