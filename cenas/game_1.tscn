@@ -1,16 +1,29 @@
-[gd_scene load_steps=9 format=4 uid="uid://igurwk4picw"]
+[gd_scene load_steps=10 format=4 uid="uid://igurwk4picw"]
 
 [ext_resource type="PackedScene" uid="uid://dx7bmcnt8xeym" path="res://entidades/pleyer.tscn" id="1_aca7r"]
-[ext_resource type="Script" uid="uid://b1buplik4da4w" path="res://scripts/game_dialogo_box1.gd" id="1_msh08"]
 [ext_resource type="TileSet" uid="uid://c47canc22e3w5" path="res://tilles/terras.tres" id="2_g6vlc"]
 [ext_resource type="TileSet" uid="uid://dj5aok8ojptpy" path="res://tilles/decoracoes.tres" id="3_g164u"]
 [ext_resource type="PackedScene" uid="uid://dfbt4d13o253v" path="res://entidades/camera.tscn" id="4_g164u"]
 [ext_resource type="PackedScene" uid="uid://cnw2an128ouxs" path="res://cenas/ui_canvas.tscn" id="6_uvsh8"]
-[ext_resource type="PackedScene" uid="uid://bwhwil62ld5u0" path="res://entidades/fim.tscn" id="7_uvsh8"]
+[ext_resource type="PackedScene" uid="uid://bwhwil62ld5u0" path="res://cenas/fim.tscn" id="7_uvsh8"]
+[ext_resource type="PackedScene" uid="uid://clkj5u1pnxacj" path="res://cenas/killzone_cena.tscn" id="8_ayr4c"]
 [ext_resource type="Texture2D" uid="uid://c0bpodp4kx77f" path="res://sprites/Seasonal Tilesets/Seasonal Tilesets/2 - Autumn Forest/Background parts/6 - Distant_trees.png" id="8_chbvx"]
 
+[sub_resource type="GDScript" id="GDScript_uvsh8"]
+script/source = "extends Node2D
+
+#var dialogo_box = preload(\"res://cenas/dialogo_box.tscn\")
+#var inst = null
+
+#func _input(event: InputEvent) -> void:
+	#if event.is_action_pressed(\"ui_accept\"):
+	
+		#inst = dialogo_box.instantiate()
+		#$ui_canvas/Controldocanvas.add_child(inst)
+"
+
 [node name="game1" type="Node2D"]
-script = ExtResource("1_msh08")
+script = SubResource("GDScript_uvsh8")
 
 [node name="pleyer" parent="." instance=ExtResource("1_aca7r")]
 position = Vector2(22, 42)
@@ -41,10 +54,11 @@ grow_vertical = 2
 metadata/_edit_use_anchors_ = true
 
 [node name="fim" parent="." instance=ExtResource("7_uvsh8")]
-position = Vector2(10, -50)
+position = Vector2(5, -54.999996)
+rotation = -0.049210772
 
 [node name="fim2" parent="." instance=ExtResource("7_uvsh8")]
-position = Vector2(1398, -140)
+position = Vector2(1400, -140)
 next_level = "floresta"
 
 [node name="fundo_de_tela" type="Node" parent="."]
@@ -57,5 +71,8 @@ repeat_times = 3
 
 [node name="Sprite2D" type="Sprite2D" parent="fundo_de_tela/ceu"]
 z_index = -1
-position = Vector2(414, 7)
+position = Vector2(436, -39)
 texture = ExtResource("8_chbvx")
+
+[node name="killzone" parent="." instance=ExtResource("8_ayr4c")]
+position = Vector2(196, 144)

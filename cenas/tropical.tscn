@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=4 uid="uid://d5baux8fupwm"]
+[gd_scene load_steps=7 format=4 uid="uid://d5baux8fupwm"]
 
 [ext_resource type="PackedScene" uid="uid://dx7bmcnt8xeym" path="res://entidades/pleyer.tscn" id="1_ur7bn"]
 [ext_resource type="TileSet" uid="uid://c47canc22e3w5" path="res://tilles/terras.tres" id="2_y8hrx"]
 [ext_resource type="TileSet" uid="uid://dj5aok8ojptpy" path="res://tilles/decoracoes.tres" id="3_y8hrx"]
 [ext_resource type="PackedScene" uid="uid://dfbt4d13o253v" path="res://entidades/camera.tscn" id="4_iel3y"]
-[ext_resource type="PackedScene" uid="uid://bwhwil62ld5u0" path="res://entidades/fim.tscn" id="5_ujypj"]
+[ext_resource type="PackedScene" uid="uid://bwhwil62ld5u0" path="res://cenas/fim.tscn" id="5_ujypj"]
+[ext_resource type="PackedScene" uid="uid://clkj5u1pnxacj" path="res://cenas/killzone_cena.tscn" id="6_4dxmv"]
 
 [node name="tropical" type="Node2D"]
 metadata/_edit_vertical_guides_ = [992.0]
@@ -27,3 +28,6 @@ limit_right = 992
 [node name="fim" parent="." instance=ExtResource("5_ujypj")]
 position = Vector2(960, -32)
 next_level = "floresta"
+
+[node name="killzone" parent="." instance=ExtResource("6_4dxmv")]
+position = Vector2(138, 125)

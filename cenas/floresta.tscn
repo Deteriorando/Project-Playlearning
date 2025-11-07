@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cw1ia7r2kii7j" path="res://sprites/Seasonal Tilesets/Seasonal Tilesets/2 - Autumn Forest/Background parts/4 - Tree_row_BG_1.png" id="5_ug786"]
 [ext_resource type="PackedScene" uid="uid://dfbt4d13o253v" path="res://entidades/camera.tscn" id="7_g6rsc"]
 [ext_resource type="TileSet" uid="uid://dj5aok8ojptpy" path="res://tilles/decoracoes.tres" id="7_x0fxp"]
-[ext_resource type="PackedScene" uid="uid://bwhwil62ld5u0" path="res://entidades/fim.tscn" id="9_eg8yq"]
+[ext_resource type="PackedScene" uid="uid://bwhwil62ld5u0" path="res://cenas/fim.tscn" id="9_eg8yq"]
 
 [node name="floresta" type="Node2D"]
 metadata/_edit_vertical_guides_ = [1056.0]
