@@ -30,4 +30,7 @@ position = Vector2(960, -32)
 next_level = "floresta"
 
 [node name="killzone" parent="." instance=ExtResource("6_4dxmv")]
-position = Vector2(138, 125)
+position = Vector2(235, 174)
+
+[node name="killzone2" parent="." instance=ExtResource("6_4dxmv")]
+position = Vector2(272, 174)
