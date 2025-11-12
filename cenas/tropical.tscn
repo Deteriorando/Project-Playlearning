@@ -11,7 +11,7 @@
 metadata/_edit_vertical_guides_ = [992.0]
 
 [node name="pleyer" parent="." instance=ExtResource("1_ur7bn")]
-position = Vector2(75, -34)
+position = Vector2(78, -106)
 scale = Vector2(4, 4)
 
 [node name="terreno" type="TileMapLayer" parent="."]
