@@ -1,0 +1,9 @@
+Player: Quero comprar uma poção!
+character (Enemy 32x): É 32 moedas!
+- Comprar
+	set {comprar} = true
+- Não comprar
+if {comprar} == true:
+	character: Obrigado por comprar!
+else:
+	character: Volte mais tarde!
