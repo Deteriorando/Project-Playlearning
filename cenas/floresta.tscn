@@ -27,19 +27,21 @@ repeat_size = Vector2(288, 0)
 repeat_times = 5
 
 [node name="montanha" type="Sprite2D" parent="fundos_de_tela/mantanhas_tela"]
-position = Vector2(-4, -102)
+position = Vector2(182, -205)
+scale = Vector2(3, 3)
 texture = ExtResource("4_eg8yq")
 centered = false
 
 [node name="cvampo_tela" type="Parallax2D" parent="fundos_de_tela"]
 z_index = 1
 scroll_scale = Vector2(0.2, 0.2)
-scroll_offset = Vector2(-222, 85)
+scroll_offset = Vector2(-222, 178)
 repeat_size = Vector2(288, 0)
 repeat_times = 3
 
 [node name="campo" type="Sprite2D" parent="fundos_de_tela/cvampo_tela"]
-position = Vector2(-14, -120)
+position = Vector2(-55, -743)
+scale = Vector2(5, 5)
 texture = ExtResource("5_ug786")
 centered = false
 
