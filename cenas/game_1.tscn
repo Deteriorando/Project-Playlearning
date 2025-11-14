@@ -85,3 +85,11 @@ texture = ExtResource("8_chbvx")
 [node name="killzone" parent="." instance=ExtResource("8_ayr4c")]
 position = Vector2(574, 168)
 scale = Vector2(3, 3)
+
+[node name="killzone2" parent="." instance=ExtResource("8_ayr4c")]
+position = Vector2(2045, 67)
+scale = Vector2(3, 3)
+
+[node name="killzone3" parent="." instance=ExtResource("8_ayr4c")]
+position = Vector2(2171, 65)
+scale = Vector2(3, 3)
