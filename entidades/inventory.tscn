@@ -1,0 +1,105 @@
+[gd_scene load_steps=5 format=3 uid="uid://fh1bvksb356k"]
+
+[ext_resource type="Texture2D" uid="uid://b57nuvxqq6fyp" path="res://sprites/pixil-frame-0 (6).png" id="1_8ty3r"]
+[ext_resource type="PackedScene" uid="uid://y3bepwlu1o3h" path="res://entidades/slots.tscn" id="2_8ty3r"]
+[ext_resource type="Texture2D" uid="uid://tkkircpu1bue" path="res://sprites/Mini FX, Items & UI/Mini FX, Items & UI/Common Pick-ups/Health_Kit (16 x 16).png" id="3_f8rji"]
+[ext_resource type="Texture2D" uid="uid://duymglttfy686" path="res://sprites/Mini FX, Items & UI/Mini FX, Items & UI/Mini UI/Health_Indicator_White_Outline (8 x 8).png" id="5_257de"]
+
+[node name="inventory" type="TextureRect"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -89.0
+offset_right = 127.0
+offset_bottom = 98.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_8ty3r")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.075
+anchor_right = 0.906
+anchor_bottom = 1.0910001
+offset_left = -11.925
+offset_top = -0.025000572
+offset_right = 29.970001
+offset_bottom = -0.01701355
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/h_separation = -9
+theme_override_constants/v_separation = -15
+columns = 5
+
+[node name="slot1" parent="GridContainer" instance=ExtResource("2_8ty3r")]
+layout_mode = 2
+
+[node name="sprite_item" parent="GridContainer/slot1" index="1"]
+anchor_left = 0.16700001
+anchor_top = 0.367
+anchor_right = 0.85
+anchor_bottom = 0.85
+offset_left = -0.020000458
+offset_top = -0.020000458
+offset_right = -5.0
+offset_bottom = -3.0
+texture = ExtResource("3_f8rji")
+
+[node name="slot2" parent="GridContainer" instance=ExtResource("2_8ty3r")]
+layout_mode = 2
+
+[node name="slot5" parent="GridContainer" instance=ExtResource("2_8ty3r")]
+layout_mode = 2
+
+[node name="slot8" parent="GridContainer" instance=ExtResource("2_8ty3r")]
+layout_mode = 2
+
+[node name="slot9" parent="GridContainer" instance=ExtResource("2_8ty3r")]
+layout_mode = 2
+
+[node name="slot10" parent="GridContainer" instance=ExtResource("2_8ty3r")]
+layout_mode = 2
+
+[node name="slot11" parent="GridContainer" instance=ExtResource("2_8ty3r")]
+layout_mode = 2
+
+[node name="sprite_item" parent="GridContainer/slot11" index="1"]
+anchor_left = 0.15
+anchor_top = 0.26700002
+anchor_right = 0.73300004
+anchor_bottom = 0.8
+offset_top = -0.020000458
+texture = ExtResource("5_257de")
+
+[node name="slot12" parent="GridContainer" instance=ExtResource("2_8ty3r")]
+layout_mode = 2
+
+[node name="sprite_item" parent="GridContainer/slot12" index="1"]
+offset_left = 12.0
+offset_top = 19.0
+offset_right = 12.02
+offset_bottom = 18.0
+
+[node name="slot6" parent="GridContainer" instance=ExtResource("2_8ty3r")]
+layout_mode = 2
+
+[node name="slot7" parent="GridContainer" instance=ExtResource("2_8ty3r")]
+layout_mode = 2
+
+[node name="sprite_item" parent="GridContainer/slot7" index="1"]
+offset_left = 11.0
+offset_top = 16.0
+offset_right = 46.0
+offset_bottom = 48.0
+
+[editable path="GridContainer/slot1"]
+[editable path="GridContainer/slot11"]
+[editable path="GridContainer/slot12"]
+[editable path="GridContainer/slot7"]

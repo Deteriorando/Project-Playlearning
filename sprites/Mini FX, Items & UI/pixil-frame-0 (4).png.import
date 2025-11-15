@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://blg6lpfmq50hd"
-path="res://.godot/imported/quadrado_inventario.png-ad93f87ee1554da50a9599d6aa1091ed.ctex"
+uid="uid://drtow8s6bdejj"
+path="res://.godot/imported/pixil-frame-0 (4).png-62d3332f7edf2736a99fe2d6bb418359.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/quadrado_inventario.png"
-dest_files=["res://.godot/imported/quadrado_inventario.png-ad93f87ee1554da50a9599d6aa1091ed.ctex"]
+source_file="res://sprites/Mini FX, Items & UI/pixil-frame-0 (4).png"
+dest_files=["res://.godot/imported/pixil-frame-0 (4).png-62d3332f7edf2736a99fe2d6bb418359.ctex"]
 
 [params]
 

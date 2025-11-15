@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://y3bepwlu1o3h"]
+
+[ext_resource type="Script" uid="uid://dh8wiyeuyhh7c" path="res://scripts/slot_script.gd" id="1_g3ds6"]
+[ext_resource type="Texture2D" uid="uid://dcr43xdcl1n64" path="res://sprites/pixil-frame-0 (5).png" id="2_nhof1"]
+
+[node name="slots" type="Control"]
+custom_minimum_size = Vector2(60, 60)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.0
+offset_top = -104.0
+offset_right = -84.0
+offset_bottom = -44.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("1_g3ds6")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.26700002
+anchor_top = -0.683
+anchor_right = 1.8670001
+anchor_bottom = 1.8670001
+offset_left = 0.020000458
+offset_top = 24.980003
+offset_right = -0.020004272
+offset_bottom = -0.020004272
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_nhof1")
+
+[node name="sprite_item" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.583
+anchor_bottom = 0.55
+offset_top = 1.0
+offset_right = 0.020000458
