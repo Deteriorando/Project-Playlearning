@@ -27,7 +27,7 @@ repeat_size = Vector2(288, 0)
 repeat_times = 5
 
 [node name="montanha" type="Sprite2D" parent="fundos_de_tela/mantanhas_tela"]
-position = Vector2(182, -205)
+position = Vector2(133, -215)
 scale = Vector2(3, 3)
 texture = ExtResource("4_eg8yq")
 centered = false
@@ -40,7 +40,7 @@ repeat_size = Vector2(288, 0)
 repeat_times = 3
 
 [node name="campo" type="Sprite2D" parent="fundos_de_tela/cvampo_tela"]
-position = Vector2(-55, -743)
+position = Vector2(-104, -755)
 scale = Vector2(5, 5)
 texture = ExtResource("5_ug786")
 centered = false

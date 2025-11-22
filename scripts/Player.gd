@@ -18,19 +18,17 @@ func _physics_process(delta: float) -> void:
 	var direction := Input.get_axis("ui_left", "ui_right")
 	if direction:
 		velocity.x = direction * SPEED
+		anim.play("andando")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		anim.play("parado")
 		
-	if is_on_floor():
-		#faz o personagem girar
-		if direction > 0:
-			anim.flip_h = false
-			anim.play("andando")
-		elif direction < 0:
-			anim.flip_h = true
-			anim.play("andando")
-		else:
-			anim.play("parado")
-	else:
-			anim.play("pulo")
+	#faz o personagem girar
+	if direction > 0:
+		anim.flip_h = false
+	if direction < 0:
+		anim.flip_h = true
+	if not is_on_floor():
+		anim.play("pulo")
+	
 	move_and_slide()
